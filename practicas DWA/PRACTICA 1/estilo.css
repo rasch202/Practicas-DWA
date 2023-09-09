@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    margin: 10px auto auto auto ;
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    background-color: #64f7b9;
+    border-radius: 10px;
+    /*border-color: #4c4201;
+    border-width: 10px;*/
+    border-style: solid;
+     border: 10px color#4C4201 solid;
+}
+.botones{
+    margin: 10px auto auto auto ;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+}
+.boton{
+    text-transform: uppercase;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #575db4;
+    color: #fff;
+    transition: 500ms;
+}
+.boton:hover{
+    background-color: #6e72af;
+    cursor: pointer;
+    border: 3px solid #575db4;
+}
+.enlace{
+   
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #26a874;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom-color: #1c7451;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-right-color: #1c7451;
+    border-right-width: 3px;
+    border-right-style: dotted;
+    border-left-color: #1c7451;
+    border-left-width: 3px;
+    border-left-style: dotted;
+    border-top-color: #1c7451;
+    border-top-width: 3px;
+    border-top-style: dashed;
+
+}
+
+.caja{
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 10px;
+}
+#caja1{
+    background-color: #a87026;
+    border: 5px #4c4201 solid;
+}
+#caja2{
+    background-color: #e0a252;
+    border: 5px #4c4201 dotted;
+}
+#caja3{
+    background-color: #26a874;
+    border: 5px #4c4201 dashed;
+}
+#caja4{
+    background-color: #2699a8;
+    border: 5px #4c4201 groove;
+}
+#caja5{
+    background-color: #575db4;
+    border: 5px #4c4201 double;
+}
+#caja6{
+    background-color: #a626a8;
+    border: 5px #4c4201 ridge;
+}
+#caja7{
+    background-color: #2699a8;
+    border: 5px #4c4201 inset;
+}
+#caja8{
+    background-color: #575db4;
+    border: 5px #4c4201 outset;
+}
