@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Practica 5 DWA</title>
+</head>
+<body>
+    <div class="header">
+        <div class="background-header">
+            <div class="sidebar">
+                <ul class="menu-sidebar">
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Preguntas</a>
+                    </li>
+                    <li> 
+                        <a href="#">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign In</a>
+                    </li>
+                </ul>
+                <ul class="social-sidebar">
+                  <li>
+                    <i class="fa-brands fa-facebook"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-twitter"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-pinterest"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-universal-access"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-phone"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-envelope"></i>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <div class="menu-title">
+                    <h3>DWA</h3>
+                </div>
+                <div class="menu-options">
+                    <ul>
+                        <li>
+                            <a class="menu-active" href="#">
+                                <i class="fa fa-home"></i> Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-plane"></i> Vuelos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-hotel"></i> Hoteles
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-gifts"></i> Vacaciones
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-blogger-b"></i> Blogs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-phone"></i> + (503) 75255194
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form-content">
+                <div class="card">
+                    <div class="card-header">
+                        <button class="btn-options active">
+                            <i class="fa-solid fa-plane"></i>Vuelos
+                        </button>
+                        <button class="btn-options">
+                            <i class="fa-solid fa-hotel"></i>Hoteles
+                        </button>
+                        <button class="btn-options">
+                            Vuelos y Hoteles <span class="badge-red">Locales</span>
+                        </button>
+                        <button class="btn-options">
+                            <i class="fa-solid fa-gifts"></i>Vacaciones
+                        </button>
+                    </div>
+
+                    <div class="card-body">
+                        <form method="get">
+                            <div class="title-form">
+                                <h3>Tu libro de vuelos</h3>
+                            </div>
+
+                            <div class="form-buttons">
+                                <button class="btn-left-form active">
+                                    Locales
+                                </button>
+                                <button class="btn-right-form">
+                                    Internacionales
+                                </button>
+                            </div>
+
+                            <div class="form-col-1">
+                                <label for="desde">Desde</label>
+                                <input type="text" class="form-control" name="desde">
+                            </div>
+                            <div class="form-col-2">
+                                <label for="hasta">Hasta</label>
+                                <input type="text" class="form-control" name="hasta">
+                            </div>
+                            <div class="form-col-3">
+                                <label for="salida">Salida</label>
+                                <input type="date" class="form-control" name="salida">
+                            </div>
+                            <div class="form-col-4">
+                                <label for="regreso">Regreso</label>
+                                <input type="date" class="form-control" name="regreso">
+                            </div>
+                            <div class="form-col-5">
+                                <label for="adultos">Adultos</label>
+                                <input type="number" class="form-control" name="adultos">
+                            </div>
+                            <div class="form-col-6">
+                               <button class="btn-form active">
+                                Buscar Vuelos
+                               </button>
+                            </div>
+                            <div class="form-col-7">
+                                <a href="#" class="link-form">Busqueda avanzada</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-tags">
+            <div class="tags">
+                <div class="tag-info">
+                    <p class="tag-icon">
+                        <i class="fa-solid fa-plane"></i>
+                    </p>
+                    <p class="text-tag">Más de 100 vuelos</p>
+                    <h2 class="title-tag">Buscar Vuelos</h2>
+                </div>
+
+                <div class="tag-info">
+                    <p class="tag-icon">
+                        <i class="fa-solid fa-key"></i>
+                    </p>
+                    <p class="text-tag">Más de 1000 hoteles</p>
+                    <h2 class="title-tag">Obtener ofertas de hoteles</h2>
+                </div>
+
+                <div class="tag-info">
+                    <p class="tag-icon">
+                        <i class="fa-solid fa-gifts"></i>
+                    </p>
+                    <p class="text-tag">Explora nuevos lugares</p>
+                    <h2 class="title-tag">Paquetes vacaciones</h2>
+                </div>
+
+                <div class="tag-info">
+                    <p class="tag-icon">
+                        <i class="fa-solid fa-headphones-simple"></i>
+                    </p>
+                    <p class="text-tag">Atención al cliente</p>
+                    <h2 class="title-tag">+ (503) 7525-5194</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-header">
+            <p class="text-gallery-header">
+                Qué más hay para ti?
+            </p>
+            <h1 class="title-gallery-header">
+                Descubre más paquetes para ti
+            </h1>
+        </div>
+
+        <div class="gallery">
+            <div class="picture img-picture-1">
+                <h3 class="gallery-title">Actividades en la playa</h3>
+            </div>
+            <div class="picture img-picture-2">
+                <h3 class="gallery-title">Viajes románticos</h3>
+            </div>
+            <div class="picture img-picture-3">
+                <h3 class="gallery-title">Escaladas de montañas</h3>
+            </div>
+            <div class="picture img-picture-4">
+                <h3 class="gallery-title">Explorar</h3>
+            </div>
+            <div class="picture img-picture-5">
+                <h3 class="gallery-title">Retos sobre hielo</h3>
+            </div>
+            <div class="picture img-picture-6">
+                <h3 class="gallery-title">Caminatas por colina</h3>
+            </div>
+            <div class="picture img-picture-7">
+                <h3 class="gallery-title">Acampar en el bosque</h3>
+            </div>
+            <div class="picture img-picture-8">
+                <h3 class="gallery-title">Canotaje en rio</h3>
+            </div>
+        </div>
+
+        <div class="extras">
+            <div class="map">
+                <img src="images/mapa.webp" alt="Este es un mapa">
+            </div>
+            <div class="informations">
+                <div class="title-informations">
+                    <h3>Destinos populares</h3>
+                </div>
+                <div class="info">
+                    <img src="images/europa.jpg" alt="Europa" class="img-info">
+                    <div class="details">
+                        <h5 class="title-info">7 Dias en europa</h5>
+                        <p class="text-info">
+                            <span class="price-info">$ 599</span> Oferta especial
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="images/tailandia.jpg" alt="Tailandia" class="img-info">
+                    <div class="details">
+                        <h5 class="title-info">4 Noches en Tailandia</h5>
+                        <p class="text-info">
+                            <span class="price-info">$ 399</span> Oferta especial
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="images/america.jpg" alt="América" class="img-info">
+                    <div class="details">
+                        <h5 class="title-info">11 Noches en América</h5>
+                        <p class="text-info">
+                            <span class="price-info">$ 3299</span> Oferta especial
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="images/nueva-zelanda.jpg" alt="Nueva Zelanda" class="img-info">
+                    <div class="details">
+                        <h5 class="title-info">14 Noches en Nueva Zelanda</h5>
+                        <p class="text-info">
+                            <span class="price-info">$ 3999</span> Oferta especial
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="text-footer">
+            PAGINA CREADA POR REYNALDO ALEXANDER SANCHEZ DERECHOS RESERVADOS&copy;2023
+        </p>
+    </div>
+</body>
+</html>

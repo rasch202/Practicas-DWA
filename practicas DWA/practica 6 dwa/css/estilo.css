@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica,Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/*
+Estilos para header
+*/
+
+.header{
+    width: 100%;
+    height: 800px;
+    background: url(../images/paris.jpg);
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.background-header{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.sidebar{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 12;
+    border-bottom: 2px solid #fff;
+}
+.menu-sidebar{
+    grid-column: 1;
+    grid-row: 1;
+}
+.social-sidebar{
+    grid-column: 12;
+    grid-row: 1;
+}
+.menu-sidebar, .social-sidebar{
+    list-style: none;
+    padding: 20px;
+}
+.menu-sidebar li, .social-sidebar li{
+    display: inline-block;
+}
+.menu-sidebar li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.social-sidebar li{
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.menu{
+    width: 80%;
+    height: 60px;
+    margin: auto;
+    display: grid;
+    padding-top: 40px;
+}
+.menu-title{
+    grid-column: 1;
+    grid-row: 1;
+    color: #fff;
+    text-transform: uppercase;
+}
+.menu-options{
+    grid-column: 12;
+    grid-row: 1;
+}
+.menu-options ul{
+    list-style: none;
+}
+.menu-options ul li{
+    display: inline-block;
+}
+.menu-options ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.menu-active{
+    border: 1px dotted #fff;
+}
+
+.form-content{
+    width: 80%;
+    margin: auto;
+}
+.card{
+    width: 50%;
+    margin-top: 150px;
+    display: grid;
+}
+.btn-options{
+    padding: 10px;
+    background-color: #514D5C;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+.badge-red{
+    background-color: #B14845;
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn-options.active{
+    background-color: #B14845;
+}
+.card-header{
+    padding-left: 10px;
+}
+.card-body{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top: 5px solid #B14845;
+}
+.card-body form{
+    display: grid;
+}
+.title-form{
+    text-transform: uppercase;
+    grid-column: 1;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    margin-bottom: 30px;
+}
+.form-buttons{
+    display: flex;
+    grid-column: 10;
+    grid-row: 1;
+    grid-column-start: 10;
+    grid-column-end: 12;
+    margin-bottom: 30px;
+}
+.btn-form{
+    background-color: #514D5C;
+    color: #fff;
+    border: 0;
+    padding: 7px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-form.active{
+    background-color: #B14845;
+}
+.btn-left-form, .btn-right-form{
+    background-color: #514D5C;
+    color: #fff;
+    border: 0;
+    padding: 7px;
+    cursor: pointer;
+}
+.btn-right-form{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-left-form{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.btn-left-form.active{
+    background-color: #B14845;
+}
+.form-col-1, .form-col-2, .form-col-3, .form-col-4, .form-col-5, .form-col-6{
+    margin-bottom: 10px;
+    margin-left: 4px;
+}
+.form-col-1{
+    grid-column: 1;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+
+}
+.form-col-2{
+    grid-column: 6;
+    grid-row: 2;
+    grid-column-start: 7;
+    grid-column-end: 12;
+}
+.form-col-3{
+    grid-column: 1;
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.form-col-4{
+    grid-column: 2;
+    grid-row: 3;
+    grid-column-start: 5;
+    grid-column-end: 8;
+}
+.form-col-5{
+    grid-column: 3;
+    grid-row: 3;
+    grid-column-start: 9;
+    grid-column-end: 12;
+}
+.form-col-6{
+    grid-column: 1;
+    grid-row: 4;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.form-col-7{
+    grid-column: 10;
+    grid-row: 4;
+    grid-column-start: 10;
+    grid-column-end: 12;
+}
+.form-control{
+    width: 100%;
+    height: 35px;
+    border: 1px solid #b0b0b2;
+    padding: 10px;
+    border-radius: 4px;
+}
+.link-form{
+    color: #B14845;
+}
+label{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+/* estilos paraa content*/
+.content{
+    width: 100%;
+}
+.content-tags{
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 100px;
+}
+.tags{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.tag-info{
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+}
+.tag-icon{
+    color: #B14845;
+    font-size: 70px;
+    margin-bottom: 10px;
+    transition: 500ms;
+}
+.tag-icon:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.1) rotate(10deg);
+}
+.text-tag{
+    color: #8c8c8c;
+    margin-bottom: 10px;
+}
+.title-tag{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.gallery-header{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+.text-gallery-header{
+    color: #B14845;
+}
+.title-gallery-header{
+    text-transform: uppercase;
+}
+.gallery{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 10px;
+}
+.picture{
+    width: 100%;
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 700ms;
+}
+.picture:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.img-picture-1{
+    grid-column: 1;
+    grid-row: 1;
+    background: url("../images/playa.jpg");
+}
+.img-picture-2{
+    grid-column: 2;
+    grid-row: 1;
+    background: url("../images/romatico.webp");
+}
+.img-picture-3{
+    grid-column: 3;
+    grid-row: 1;
+    background: url("../images/mountains.jpg");
+}
+.img-picture-4{
+    grid-column: 4;
+    grid-row: 1;
+    background: url("../images/aventuras.jpg");
+}
+.img-picture-5{
+    grid-column: 1;
+    grid-row: 2;
+    background: url("../images/hielo.webp");
+}
+.img-picture-6{
+    grid-column: 2;
+    grid-row: 2;
+    background: url("../images/colinas.jpg");
+}
+.img-picture-7{
+    grid-column: 3;
+    grid-row: 2;
+    background: url("../images/bosques.jpg");
+}
+.img-picture-8{
+    grid-column: 4;
+    grid-row: 2;
+    background: url("../images/rios.jpg");
+}
+.extras{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2;
+    margin-top: 10px;
+}
+.map{
+    grid-column: 1;
+    grid-row: 1;
+}
+.informations{
+    grid-column: 2;
+    grid-row: 1;
+    padding: 50px;
+}
+.title-informations{
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.info{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.img-info{
+    width: 30%;
+    height: 85px;
+    border-radius: 5px;
+}
+.details{
+    width: 70%;
+    padding: 20px;
+}
+.price-info{
+    color: #B14845;
+}
+.title-info{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footer{
+    width: 100%;
+    padding: 20px;
+    background-color: #424242;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
